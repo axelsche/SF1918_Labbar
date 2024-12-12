@@ -1,3 +1,8 @@
+"""
+Fördelningen ser ut att passa bra för relighfölrdelnignen, då det mest frekventa värdet i simuleringen är runt 4 vilket
+passar fördelningens mdel och att det är en relativt jämn fördelning. Staplarna från den diskreta mätningen.
+"""
+
 import numpy as np
 from scipy import stats
 import matplotlib.pyplot as plt

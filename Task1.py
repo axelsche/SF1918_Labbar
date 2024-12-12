@@ -1,3 +1,17 @@
+"""
+1. Det vertikala stäcket visar medelvärdet för normalfördelningen och det horisontella stäcket visar konfidensintervallet.
+2. Uppskattningen av medelvärdet är korrekt om det vertikala stäcket skär det gröna stäcket. Om det inte gör det, är
+uppskattningen felaktig.
+3. ungefär 90-98% av konfidensintervallen skär det gröna stäcket.
+4. Givet det relativt låga intervallet för konfidensintervallen, är det rimligt att anta att de flesta av de vertikala
+linjerna skär det gröna stäcket.
+5. Förändringar i sigma och n kommer att påverka konfidensintervallen. Om sigma ökar kommer konfidensintervallen att öka,
+och om n ökar kommer konfidensintervallen att minska.
+6. minskande av alpha, kommer att minska konfidensintervallet vilket ökar säkerheten men minskar konfidensintervalet
+7. Förändringar i mu kommer shifta mittpunkten av fördelnignen, vilket i sin tur shiftar beräkningarna av
+konfidensintervallen.
+"""
+
 import numpy as np
 from scipy import stats
 import matplotlib.pyplot as plt
@@ -9,7 +23,7 @@ import matplotlib.pyplot as plt
 # Number of measurements
 n = 10000
 # Mean
-mu = 2
+mu   = 2
 # Standard deviation
 sigma = 1
 # One minus the confidence level (alpha)
