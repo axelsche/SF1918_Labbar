@@ -77,7 +77,7 @@ jb_x4 = stats.jarque_bera(x4)
 # Print out Jarque-Bera test statistics and p-values.
 # If p-value < 0.05, we reject the null hypothesis of normality at the 5% level.
 print("Jarque-Bera Test Results:")
-print(f"Child's Birth Weight: Statistic={jb_x1.statistic:.4f}, p-value={jb_x1.pvalue:.4f}")
+print(f"Child's Birth Weight: Statistic={jb_x1.statistic:.4f}, p-value={jb_x1.pvalue:.60f}")
 print(f"Mother's Age:         Statistic={jb_x2.statistic:.4f}, p-value={jb_x2.pvalue:.4f}")
 print(f"Mother's Height:      Statistic={jb_x3.statistic:.4f}, p-value={jb_x3.pvalue:.4f}")
 print(f"Mother's Weight:      Statistic={jb_x4.statistic:.4f}, p-value={jb_x4.pvalue:.4f}")
